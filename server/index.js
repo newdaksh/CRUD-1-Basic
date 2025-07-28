@@ -4,6 +4,7 @@ const cors = require("cors");
 const UserModel = require("./models/users");
 
 
+
 const app = express();
 
 // Middleware setup
@@ -12,7 +13,7 @@ app.use(express.json());
 
 // MongoDB Connection
 mongoose
-  .connect("mongodb://localhost:27017/crud-basic")
+  .connect("mongodb+srv://octaldaksh:octal123@cluster0.5xt6n.mongodb.net/crud-1")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
