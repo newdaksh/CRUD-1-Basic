@@ -10,7 +10,7 @@ const Users = () => {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:5000")
+    axios.get("https://crud-app-basic.onrender.com")
 
     .then((result) => {
       setUsers(result.data)
