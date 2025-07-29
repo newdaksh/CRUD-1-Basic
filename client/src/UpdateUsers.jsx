@@ -16,7 +16,7 @@ const UpdateUsers = () => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:5000/getUser/" + id)
+    axios.get("https://crud-app-basic.onrender.com/getUser/" + id)
 
     .then((result) => {
       console.log(result)
@@ -35,7 +35,7 @@ const UpdateUsers = () => {
   const Update = (e) => {
     e.preventDefault();
     
-    axios.put("http://localhost:5000/updateUser/" + id, { name: Name, age: Age, email: Email })
+    axios.put("https://crud-app-basic.onrender.com/updateUser/" + id, { name: Name, age: Age, email: Email })
 
     .then((result) => {
       console.log(result)

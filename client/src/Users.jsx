@@ -24,7 +24,7 @@ const Users = () => {
   
 
    const handleDelete = (id) => {
-      axios.delete("http://localhost:5000/deleteUser/" + id)
+      axios.delete("https://crud-app-basic.onrender.com/deleteUser/" + id)
       .then(() => {
         // Update the users state by filtering out the deleted user
         setUsers((prevUsers) => prevUsers.filter((user) => user._id !== id));

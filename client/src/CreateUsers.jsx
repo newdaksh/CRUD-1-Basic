@@ -12,7 +12,7 @@ const CreateUsers = () => {
     e.preventDefault(); // ✅ correct method name
     console.log("Form Submitted:", { Name, Age, Email });
 
-    axios.post("http://localhost:5000/createUser", { name: Name, age: Age, email: Email })
+    axios.post("https://crud-app-basic.onrender.com/createUser", { name: Name, age: Age, email: Email })
       .then((result) => {
         console.log("User created successfully:", result.data);
         alert("User created successfully!");
