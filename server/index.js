@@ -13,7 +13,7 @@ app.use(express.json());
 
 // MongoDB Connection
 mongoose
-  .connect("mongodb+srv://octaldaksh:octal123@cluster0.5xt6n.mongodb.net/crud-1")
+  .connect("mongodb+srv://octaldaksh:octal123@cluster0.5xt6n.mongodb.net/crud-latest")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
